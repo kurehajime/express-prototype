@@ -27,7 +27,7 @@ const itemsService = {
             name: row.name.value,
             price: row.price.value,
             imageUri: row.imageUri.value || '://placehold.it/640x340?text=no image',
-            summary: row.summary.value
+            summary: 'なにぬねの'
           }));
         items.sort((a, b) => a.id - b.id);
 
@@ -53,7 +53,7 @@ const itemsService = {
       name: row.name.value,
       price: row.price.value,
       imageUri: row.imageUri.value || '://placehold.it/640x340?text=no image',
-      summary: row.summary.value
+      summary: 'なにぬねの'
     }
   }
 };
