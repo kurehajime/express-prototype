@@ -13,7 +13,7 @@ const agent = process.env['https_proxy'] ? new HttpsProxyAgent(process.env['http
 const itemsService = {
   getItems() {
     return fetch(`${kintoneApp.base}records.json?app=${kintoneApp.id}`, {
-      agent,
+      //agent,
       headers: {
         'X-Cybozu-API-Token': kintoneApp.token
       }
@@ -37,7 +37,7 @@ const itemsService = {
 
   getItem(id) {
     return fetch(`${kintoneApp.base}record.json?app=${kintoneApp.id}&id=${id}`, {
-      agent,
+      //agent,
       headers: {
         'X-Cybozu-API-Token': kintoneApp.token
       }

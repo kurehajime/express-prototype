@@ -59,7 +59,7 @@ const ordersService = {
         return fetch(`${kintoneApp.base}record.json`, {
           method: 'POST',
           body: JSON.stringify(data),
-          agent,
+          //agent,
           headers: {
             'Content-Type': 'application/json',
             'X-Cybozu-API-Token': kintoneApp.token
